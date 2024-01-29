@@ -23,7 +23,7 @@ Follow these steps to get started with the Mass Mailing Automation System:
    https://github.com/Aryanzs/massmailing_bot.git
 
 2. Install all the required libraries and packages using
-   '''bash
+   ```bash
    pip install -r requirements.txt
    
 3. In mail.py write your own smtp server generated password and your own email id
