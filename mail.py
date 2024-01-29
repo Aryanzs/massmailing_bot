@@ -4,12 +4,15 @@ from email.mime.text import MIMEText
 from generating_message import generate_email_from_file  # Import the generate_email function
 from read_emails import list_of_emails, list_of_names
 import pandas as pd
+import os
+from dotenv import load_dotenv
+load_dotenv()
 
 # Your SMTP server configuration
 smtp_server = "smtp.gmail.com" 
 smtp_port = 587  # Change this to the appropriate port
-sender_email = ''
-sender_password = ""
+sender_email = os.getenv("sender_email")
+sender_password = os.getenv("sender_password")
 
 
 
